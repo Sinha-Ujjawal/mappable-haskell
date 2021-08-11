@@ -15,10 +15,6 @@ import qualified Data.Set as S
 class Mappable f a b where
   map :: (a -> b) -> f a -> f b
 
--- | Mappable instance for all Functors. This makes List, Maybe, ... as Mappable via fmap
-instance Functor f => Mappable f a b where
-  map = fmap
-
 -- | Mappable instance for Data.Set.Set
 instance (Ord a, Ord b) => Mappable S.Set a b where
   map = S.map

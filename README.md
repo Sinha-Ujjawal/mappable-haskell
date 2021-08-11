@@ -2,7 +2,7 @@
 **Version - 0.1.0.0**
 
 [Mappable](https://github.com/Sinha-Ujjawal/Mappable) is a Haskell Library to make haskell structures like Sets and Map 
-mappable which are not really functors. It also provides a Bag data structure that is implemented using Data.Map.Strict. Functors are automatically mappable via fmap.
+mappable which are not really functors. It also provides a Bag data structure that is implemented using Data.Map.Strict.
 
 ---
 
@@ -23,10 +23,7 @@ instance (Ord a, Ord b) Mappable => Set a b where
   -- map
 ```
 
-The only difference between [Functor](https://hackage.haskell.org/package/base-4.15.0.0/docs/Prelude.html#t:Functor) and Mappable is that mappable allows you to put arbitrary constraint on `a` and `b`. Every Functor is automatically an Mappable via `fmap`.
-
-### Using Bag Module
-
+The only difference between [Functor](https://hackage.haskell.org/package/base-4.15.0.0/docs/Prelude.html#t:Functor) and Mappable is that mappable allows you to put arbitrary constraint on `a` and `b`.
 
 ---
 
