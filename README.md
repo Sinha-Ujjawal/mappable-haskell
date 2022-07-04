@@ -7,7 +7,7 @@ mappable which are not really functors. It also provides a Bag data structure th
 ---
 
 ## Usage
-Docs can be found [here](https://sinha-ujjawal.github.io/Mappable/)
+Docs can be found [here](https://sinha-ujjawal.github.io/mappable-haskell/)
 #### Making Mappable Instance
 ```haskell
 instance Functor Collection where
